@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>MEIS Fees Calculator</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:400,100,300,700"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="img-container"><img src="logo.png" class="logo" alt=""></div>
+    
+    <section class="ftco-section">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-6 text-center mb-5">
+            <h2 class="heading-section">MEIS Muruj Fees Calculator</h2>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-md-12">
+            <div class="wrapper">
+              <div class="row no-gutters">
+                <div class="col-md-6">
+                  <div class="contact-wrap w-100 p-lg-5 p-4">
+                    <h3 class="mb-4">Enter Details</h3>
+                    <div id="form-message-warning" class="mb-4"></div>
+                    <div id="form-message-success" class="mb-4">
+                      Your message was sent, thank you!
+                    </div>
+                    <form
+                      method="POST"
+                      id="childrenForm"
+                      name="contactForm"
+                      class="contactForm"
+                    >
+                      <div class="row">
+                        <div class="col-md-12">
+                          <div class="form-group">
+                            <select
+                              name="numberOfChildren"
+                              id="numberOfChildren"
+                              class="form-control"
+                              required
+                            >
+                              <option disabled selected value="">
+                                Select number of children
+                              </option>
+                              <option value="1"><bold>1</bold></option>
+                              <option value="2">2</option>
+                              <option value="3">3</option>
+                              <option value="4">4</option>
+                              <option value="5">5</option>
+                              <option value="6">6</option>
+                            </select>
+                          </div>
+                        </div>
+                        <div class="col-md-12">
+                          <div class="form-group" id="childFields"></div>
+                        </div>
+                        <div class="col-md-12">
+                          <div class="form-group">
+                            <select
+                              name="busOption"
+                              id="busOption"
+                              class="form-control"
+                              required
+                            >
+                              <option disabled selected value="">
+                                Select transportation
+                              </option>
+                              <option value="0">No transportation</option>
+                              <option value="1">One Way</option>
+                              <option value="2">Two Ways</option>
+                            </select>
+                          </div>
+                        </div>
+                        <div class="col-md-12">
+                          <div class="form-group">
+                            <input
+                              type="submit"
+                              value="Calculate Fees"
+                              class="btn btn-primary"
+                            />
+                            <div class="submitting"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+                <div class="col-md-6 d-flex align-items-stretch">
+                  <div class="info-wrap w-100 p-lg-5 p-4 img">
+                    <div class="hidden-receipt">
+                      <h3>Total Fees</h3>
+
+                      <div id="receipt">
+                        <!-- <div class="item">
+                          <p class="description">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing
+                            elit. Amet inventore
+                          </p>
+                          <p class="total">1000</p>
+                        </div>
+                        <div class="item">
+                          <p class="description">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing
+                            elit. Amet inventore
+                          </p>
+                          <p class="total">1000</p>
+                        </div> -->
+                      </div>
+              
+                      <h3>Early Payment Discount</h3>
+                      <div id="early-payment-discount">
+                        <!-- <div class="item">
+                          <p class="description">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing
+                            elit. Amet inventore
+                          </p>
+                          <p class="total">1000</p>
+                        </div>
+                        <div class="item">
+                          <p class="description">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing
+                            elit. Amet inventore
+                          </p>
+                          <p class="total">1000</p>
+                        </div> -->
+                      </div>
+                      <input type="button" class="btn btn-primary show-model" value="Discount Policy">
+
+                    
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="model hidden">
+      <button class="close-modal">&times;</button>
+      <h4>Early Payment Discount Policy</h4>
+      <p>
+          10% discount is applied for Grade (KG & Grade 1, 2, 3) if the full academic year fees are paid <b>before the end of the second week of 1<sup>st</sup> semester</b>
+      </p>
+      
+      <p>5% discount is appled for Grade (4 to 12) if the full academic year fees are paid <b>before the end of the second week of 1 <sup>st</sup> semester</b></p>
+  </div>
+  <div class="overlay hidden"></div>
+    </div>
+    <script src="script.js"></script>
+    <!-- <script src="js/jquery.min.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/main.js"></script> -->
+  </body>
+</html>
