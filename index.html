@@ -22,13 +22,13 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <div class="img-container"><img src="logo.png" class="logo" alt=""></div>
+    <div class="img-container"><img src="img/ataa.png" class="logo" alt=""></div>
     
     <section class="ftco-section">
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-md-6 text-center mb-5">
-            <h2 class="heading-section">MEIS Muruj Fees Calculator</h2>
+            <h2 class="container__heading">Ataa Schools Fees Calculator</h2>
           </div>
         </div>
         <div class="row justify-content-center">
@@ -49,6 +49,18 @@
                       class="contactForm"
                     >
                       <div class="row">
+                        <div class="col-md-12">
+                          <div class="form-group">
+                            <select name="schoolOption" id="schoolOption" class="form-control" required>
+                              <option disabled selected value="">
+                                Select School
+                              </option>
+                              <option value="meis">Middle East International School</option>
+                              <option value="eis">Education International School</option>
+                              <option value="ois">Oruba International School</option>
+                            </select>
+                          </div>
+                        </div>
                         <div class="col-md-12">
                           <div class="form-group">
                             <select
@@ -89,6 +101,7 @@
                             </select>
                           </div>
                         </div>
+                       
                         <div class="col-md-12">
                           <div class="form-group">
                             <input
@@ -166,7 +179,7 @@
   </div>
   <div class="overlay hidden"></div>
     </div>
-    <script src="script.js"></script>
+    <script src="js/script.js" type="module"></script>
     <!-- <script src="js/jquery.min.js"></script>
     <script src="js/popper.js"></script>
     <script src="js/bootstrap.min.js"></script>
