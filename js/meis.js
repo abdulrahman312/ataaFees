@@ -185,7 +185,7 @@ export const meisFees = (
 
   // Calculate Bus Fees
   if (busOption === 1 || busOption === 2) {
-    for (i = 0; i < childArray.length; i++) {
+    for (let i = 0; i < childArray.length; i++) {
       if (i === 0) {
         let busFees = calculateBusFees(busOption);
         attachElement(
