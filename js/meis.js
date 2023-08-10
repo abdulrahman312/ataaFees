@@ -47,7 +47,8 @@ export const meisFees = (
   attachElement,
   classSelect,
   receipt,
-  earlyPayment
+  earlyPayment,
+  busOption
 ) => {
   let totalFees = 0;
   let totalBusFees = 0;
