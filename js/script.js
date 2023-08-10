@@ -149,6 +149,6 @@ function calculateFees(event) {
   childArray.sort((a, b) => b - a);
 
   if (schoolOption.value === "meis") {
-    meisFees(childArray, attachElement, classSelect, receipt, earlyPayment);
+    meisFees(childArray, attachElement, classSelect, receipt, earlyPayment, busOption);
   }
 }
