@@ -67,19 +67,19 @@ body {
   line-height: 1.5;
   color: #212529;
   text-align: left;
-  /* background-image: linear-gradient(
-    0deg,
+  background-image: linear-gradient(
+    180deg,
     hsl(228deg 96% 28%) 0%,
-    hsl(233deg 58% 38%) 0%,
-    hsl(233deg 44% 45%) 0%,
-    hsl(232deg 38% 52%) 1%,
-    hsl(231deg 40% 59%) 3%,
-    hsl(229deg 41% 66%) 6%,
-    hsl(228deg 42% 73%) 11%,
-    hsl(226deg 42% 80%) 21%,
-    hsl(224deg 40% 88%) 47%,
-    hsl(223deg 28% 95%) 100%
-  ); */
+    hsl(226deg 95% 35%) -1%,
+    hsl(223deg 96% 41%) -1%,
+    hsl(222deg 96% 48%) -1%,
+    hsl(220deg 96% 55%) -2%,
+    hsl(218deg 96% 62%) -1%,
+    hsl(216deg 96% 69%) -1%,
+    hsl(214deg 97% 76%) 1%,
+    hsl(211deg 95% 83%) 7%,
+    hsl(210deg 96% 90%) 28%
+  );
 }
 
 .container__heading {
