@@ -48,8 +48,21 @@ export const meisFees = (
   classSelect,
   receipt,
   earlyPayment,
-  busOption
+  busOption,
+  schoolLogo,
+  schoolName
 ) => {
+  const img = document.createElement("img");
+  img.src = "../img/meis.png";
+  img.className = "logo";
+  schoolLogo.appendChild(img);
+
+  const schoolText = document.createElement("p");
+  schoolText.textContent = "Middle East International School (Muruj)";
+  schoolText.className = "container__heading";
+  schoolText.className = "school__text";
+  schoolName.appendChild(schoolText);
+
   let totalFees = 0;
   let totalBusFees = 0;
   let totalEarlyPaymentFees = 0;

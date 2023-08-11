@@ -5,6 +5,8 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 :root {
+  --colorPrimary: #031f8a;
+  --colorSecondary: #0430d6;
   --blue: #007bff;
   --indigo: #6610f2;
   --purple: #6f42c1;
@@ -82,8 +84,43 @@ body {
   );
 }
 
+.school__logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.school__name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+.school__text {
+  background-image: linear-gradient(
+    to right,
+    var(--colorPrimary),
+    var(--colorSecondary)
+  );
+  display: inline-block;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent !important;
+  font-size: 20px !important;
+}
+
 .container__heading {
-  color: #031f8a;
+  background-image: linear-gradient(
+    to right,
+    var(--colorPrimary),
+    var(--colorSecondary)
+  );
+  display: inline-block;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent !important;
 }
 
 option {
@@ -114,6 +151,20 @@ option {
 
   .container__heading {
     font-size: 25px;
+    font-weight: bold;
+  }
+
+  .school__text {
+    background-image: linear-gradient(
+      to right,
+      var(--colorPrimary),
+      var(--colorSecondary)
+    );
+    display: inline-block;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent !important;
+    font-size: 20px !important;
   }
 }
 
@@ -791,7 +842,7 @@ h4,
   left: 0;
   width: 60px;
   height: 3px;
-  background: #d62196;
+  background: var(--colorSecondary);
   content: "";
 }
 

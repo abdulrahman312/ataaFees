@@ -33,6 +33,10 @@ const overLay = document.querySelector(".overlay");
 const btnCloseModal = document.querySelector(".close-modal");
 const btnOpenModal = document.querySelector(".show-model");
 
+// Select school logo and name box
+const schoolLogo = document.querySelector(".school__logo");
+const schoolName = document.querySelector(".school__name");
+
 // Function to attach element to receipt element or early payment discount element
 function attachElement(p1text, p2text, optionalClass, element) {
   const item = document.createElement("div");
@@ -149,6 +153,15 @@ function calculateFees(event) {
   childArray.sort((a, b) => b - a);
 
   if (schoolOption.value === "meis") {
-    meisFees(childArray, attachElement, classSelect, receipt, earlyPayment, busOption);
+    meisFees(
+      childArray,
+      attachElement,
+      classSelect,
+      receipt,
+      earlyPayment,
+      busOption,
+      schoolLogo,
+      schoolName
+    );
   }
 }
