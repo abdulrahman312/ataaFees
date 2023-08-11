@@ -75,7 +75,7 @@ body {
   line-height: 1.5;
   color: #212529;
   text-align: left;
-  background-image: linear-gradient(
+  /* background-image: linear-gradient(
     0deg,
     hsl(228deg 96% 28%) 0%,
     hsl(233deg 58% 38%) 0%,
@@ -87,8 +87,7 @@ body {
     hsl(226deg 42% 80%) 21%,
     hsl(224deg 40% 88%) 47%,
     hsl(223deg 28% 95%) 100%
-  );
-  min-height: 100vh;
+  ); */
 }
 
 .container__heading {
@@ -96,7 +95,7 @@ body {
 }
 
 option {
-  color: #6f42c1;
+  color: #031f8a;
 }
 
 .img-container {
@@ -147,7 +146,7 @@ option {
 }
 
 .optional {
-  color: #6f42c1;
+  color: #031f8a;
   font-weight: bold;
 }
 
@@ -201,6 +200,37 @@ option {
   cursor: pointer;
   border: none;
   background: none;
+}
+
+/* Class for button */
+.button,
+.button:link,
+.button:visited {
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 0.8rem 2rem;
+  display: inline-block;
+  border-radius: 10rem;
+  transform: all 0.2s;
+  position: relative;
+  letter-spacing: 0.2rem;
+  word-spacing: 0.4rem;
+  border: none;
+  cursor: pointer;
+  color: #031f8a;
+  margin-top: 2rem;
+}
+
+.button:hover {
+  transform: translateY(-0.3rem);
+  box-shadow: 0 1rem 2rem rgba(#031f8a, 0.2);
+}
+
+.button:active,
+.button:focus {
+  outline: none;
+  transform: translateY(-1px);
+  box-shadow: 0 0.5rem 1rem rgba(#031f8a, 0.2);
 }
 
 [tabindex="-1"]:focus {
@@ -10869,20 +10899,9 @@ textarea.form-control {
 }
 
 .contact-wrap {
-  background-image: linear-gradient(
-    125deg,
-    hsl(228deg 96% 28%) 0%,
-    hsl(227deg 97% 30%) 18%,
-    hsl(227deg 98% 33%) 30%,
-    hsl(227deg 98% 36%) 40%,
-    hsl(227deg 98% 39%) 48%,
-    hsl(227deg 96% 43%) 56%,
-    hsl(216deg 100% 46%) 64%,
-    hsl(216deg 90% 58%) 71%,
-    hsl(215deg 94% 69%) 80%,
-    hsl(213deg 96% 79%) 89%,
-    hsl(210deg 96% 90%) 100%
-  );
+  background-image: linear-gradient(to right bottom, #031f8a, #0430d6),
+    url("../img/logo1.jpg");
+  /* min-height: 100vh; */
 }
 .contact-wrap h3 {
   color: #fff;
