@@ -111,6 +111,16 @@ option {
   height: 8%;
 }
 
+@media only screen and (max-width: 768px) {
+  .logo {
+    width: 120px;
+  }
+
+  .container__heading {
+    font-size: 25px;
+  }
+}
+
 .hidden-receipt {
   display: none;
 }
