@@ -54,6 +54,7 @@ export const meisFees = (
 ) => {
   const img = document.createElement("img");
   img.src = "../img/meis.png";
+  img.alt = "School Logo";
   img.className = "logo";
   schoolLogo.appendChild(img);
 

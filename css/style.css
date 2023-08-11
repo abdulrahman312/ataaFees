@@ -824,8 +824,7 @@ h4,
 }
 
 .contact-wrap {
-  background-image: linear-gradient(to right bottom, #031f8a, #0430d6),
-    url("../img/logo1.jpg");
+  background-image: linear-gradient(to right bottom, #031f8a, #0430d6);
   /* min-height: 100vh; */
 }
 .contact-wrap h3 {
