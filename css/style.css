@@ -282,6 +282,10 @@ option {
   box-shadow: 0 0.5rem 1rem rgba(#031f8a, 0.2);
 }
 
+.button__receipt {
+  display: flex;
+}
+
 /* Classes for logo slider */
 .slide__img {
   height: 130px;

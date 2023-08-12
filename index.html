@@ -118,7 +118,7 @@
                     </form>
                   </div>
                 </div>
-                <div class="col-md-6 d-flex align-items-stretch">
+                <div class="col-md-6 d-flex align-items-stretch" id="printableArea">
                   <div class="info-wrap w-100 p-lg-5 p-4 img">
                     <div class="school__details">
                       <div class="school__logo"></div>
@@ -161,7 +161,11 @@
                           <p class="total">1000</p>
                         </div> -->
                       </div>
-                      <input type="button" class="btn btn-primary show-model" value="Discount Policy">
+                      <div class="button__receipt">
+                      <input type="button" class="button show-model" value="Discount Policy">
+                      <input type="button" class="button" onclick="printDiv('printableArea')" value="PRINT" />
+                        </div>
+
 
                     
                     </div>
@@ -236,6 +240,19 @@
   <div class="overlay hidden"></div>
     </div>
     <script src="js/script.js" type="module"></script>
+
+    <script type="text/javascript">
+      function printDiv(divName) {
+     var printContents = document.getElementById(divName).innerHTML;
+     var originalContents = document.body.innerHTML;
+
+     document.body.innerHTML = printContents;
+
+     window.print();
+
+     document.body.innerHTML = originalContents;
+}
+  </script>
     <!-- <script src="js/jquery.min.js"></script>
     <script src="js/popper.js"></script>
     <script src="js/bootstrap.min.js"></script>

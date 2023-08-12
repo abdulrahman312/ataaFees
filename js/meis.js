@@ -285,6 +285,4 @@ export const meisFees = (
     false,
     receipt
   );
-
-  console.log("he");
 };
