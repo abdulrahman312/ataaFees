@@ -174,7 +174,7 @@ option {
 
 .item > p {
   display: inline-block;
-  border-bottom: 2px solid #6f42c1;
+  border-bottom: 2px solid var(--colorSecondary);
 }
 
 .description {
@@ -295,9 +295,9 @@ option {
 }
 
 .slider {
-  margin-top: 20px;
+  margin-top: 20px 0px;
   background-color: transparent;
-  padding: 2em 2em;
+  padding: 2em 0em;
   overflow: hidden;
 }
 
