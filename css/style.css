@@ -284,6 +284,8 @@ option {
 
 .button__receipt {
   display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
 }
 
 /* Classes for logo slider */
